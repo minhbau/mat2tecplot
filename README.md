@@ -19,17 +19,10 @@ echo "VARIABLES = "X", "Y", "c_keatom"" >> $outputfile
 echo "ZONE I=$M, J=$N, F=POINT" >> $outputfile
 
 for ((i=1;i<$M+1;i++))
-
 {
-
-   for ((j=1;j<$N+1;j++))
-   
-   {
-   
-      data=$(awk 'NR=='$i'{print $'$j'}' $inputfile)
-      
-      printf "$j,$i,$data\n" >> $outputfile
-      
-   }
-   
+   for ((j=1;j<$N+1;j++))  
+   {   
+      data=$(awk 'NR=='$i'{print $'$j'}' $inputfile)      
+      printf "$j,$i,$data\n" >> $outputfile      
+   }   
 }
