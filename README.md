@@ -1,4 +1,4 @@
-# mat2tecplot2.0
+# mat2tecplot 2.0
 将m*n矩阵转化为tecplot数据格式，输入格式比如“./mat2tecplot.sh 200 200 -2000 2000 -500 500 c_keatom test.txt test.dat”，其中mat2tecplot.sh文件内容如下：
 ```
 #! /bin/bash
@@ -35,7 +35,7 @@ for ((i=1;i<$M+1;i++))
    }
 }
 ```
-# mat2tecplot1.0
+# mat2tecplot 1.0
 将m*n矩阵转化为tecplot数据格式
 ```
    #! /bin/bash
