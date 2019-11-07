@@ -1,5 +1,5 @@
 # mat2tecplot1.0
-将m*n矩阵转化为tecplot数据格式
+将m*n矩阵转化为tecplot数据格式，输入格式比如“./matrix-tecplot.sh 200 200 -2000 2000 -500 500 c_keatom test.txt test.dat”
 ```
 #! /bin/bash
 
