@@ -82,8 +82,8 @@ for ((i=1;i<$M+1;i++))
    for ((j=1;j<$N+1;j++))
    {
       data=$(awk 'NR=='$i'{print $'$j'}' $inputfile)
-      yy=$[$ymin+($i-1)*($ymax-$ymin)/($N-1)|bc]
-      xx=$[$xmin+($j-1)*($xmax-$xmin)/($M-1)|bc]
+      yy=$[$ymin+($i-1)*($ymax-$ymin)/($M-1)|bc]
+      xx=$[$xmin+($j-1)*($xmax-$xmin)/($N-1)|bc]
       echo "$xx,$yy,$data" >> $outputfile
    }
 }
@@ -119,8 +119,8 @@ for ((i=1;i<$M+1;i++))
    for ((j=1;j<$N+1;j++))
    {
       data=$(awk 'NR=='$i'{print $'$j'}' $inputfile)
-      yy=$[$ymin+($i-1)*($ymax-$ymin)/($N-1)|bc]
-      xx=$[$xmin+($j-1)*($xmax-$xmin)/($M-1)|bc]
+      yy=$[$ymin+($i-1)*($ymax-$ymin)/($M-1)|bc]
+      xx=$[$xmin+($j-1)*($xmax-$xmin)/($N-1)|bc]
       echo "$xx,$yy,$data" >> $outputfile
    }
 }
