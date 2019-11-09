@@ -20,8 +20,8 @@ tmpout=$outputfile.tmp
 M=`cat $inputfile|grep -v "#"|wc -l`
 N=`head -2 $inputfile|tail -1| awk '{print NF}'`
 
-dY=`echo |awk '{print ('$ymax'-1.0*'$ymin')/('$N'-1.0)}'`
-dX=`echo |awk '{print ('$xmax'-1.0*'$xmin')/('$M'-1.0)}'`
+dY=`echo |awk '{print ('$ymax'-1.0*'$ymin')/('$M'-1.0)}'`
+dX=`echo |awk '{print ('$xmax'-1.0*'$xmin')/('$N'-1.0)}'`
 
 #echo "M=$M N=$N dX=$dX dY=$dY"
 #sleep 20
