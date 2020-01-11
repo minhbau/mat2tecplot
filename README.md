@@ -17,8 +17,8 @@ inputfile="$6"
 outputfile=$inputfile.tp
 tmpout=$outputfile.tmp
 
-M=`cat $inputfile|grep -v "#"|wc -l`                   # 统计列数
-N=`head -2 $inputfile|tail -1| awk '{print NF}'`       # 统计行数
+M=`cat $inputfile|grep -v "#"|wc -l`                   # 统计行数
+N=`head -2 $inputfile|tail -1| awk '{print NF}'`       # 统计列数
 
 dY=`echo |awk '{print ('$ymax'-1.0*'$ymin')/('$M'-1.0)}'`
 dX=`echo |awk '{print ('$xmax'-1.0*'$xmin')/('$N'-1.0)}'`
